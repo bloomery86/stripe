@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             submitButton.textContent = 'Se procesează...';
 
             // Create Stripe checkout session
-            const response = await fetch('http://localhost:3000/create-checkout', {
+            const response = await fetch('/.netlify/functions/create-checkout', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
